@@ -1,0 +1,9 @@
+<% layout("layout/boilerplate") %>
+<div class="row">
+    <div class="alert alert-danger">
+        <h1>Error <%= statusCode %></h1>
+        <p><strong><%= message %></strong></p>
+        <p><%= error.stack %></p> <!-- Display stack trace for debugging -->
+        <a href="/" class="btn btn-primary">Go to Home</a>
+    </div>
+</div>
