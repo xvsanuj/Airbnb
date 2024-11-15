@@ -23,8 +23,8 @@
 </head>
 <body>
     <!-- Navbar -->
-    <%- include("../includes/navbar.ejs") %>
-    <%- include("../includes/flash.ejs") %>
+    <%- include("../includes/navbar", {currUser: locals.currUser}) %>
+    <%- include("../includes/flash") %>
 
     <div class="container">
         <%- body %> <!-- Main content goes here -->
